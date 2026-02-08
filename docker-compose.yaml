@@ -1,0 +1,15 @@
+version: '3'
+services:
+  airflow:
+    image: apache/airflow:2.7.1-python3.9
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./data:/opt/airflow/data
+      - ./bronce.py:/opt/airflow/bronce.py
+      - ./transform_to_silver.py:/opt/airflow/transform_to_silver.py
+    environment:
+      - AIRFLOW__CORE__LOAD_EXAMPLES=False
+      - PYTHONPATH=/opt/airflow
+    ports:
+      - "8080:8080"
+    command: standalone   
