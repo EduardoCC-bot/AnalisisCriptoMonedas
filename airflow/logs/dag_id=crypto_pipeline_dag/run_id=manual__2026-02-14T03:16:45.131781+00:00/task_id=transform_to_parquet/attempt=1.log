@@ -1,0 +1,12 @@
+{"timestamp":"2026-02-14T03:16:47.035470Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-02-14T03:16:47.036057Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/crypto_dag.py","logger":"airflow.models.dagbag.BundleDagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-02-14T03:16:47.056748Z","level":"warning","event":"The `airflow.operators.python.PythonOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.python.PythonOperator'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/crypto_dag.py","lineno":4,"logger":"py.warnings"}
+{"timestamp":"2026-02-14T03:16:47.072276Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-02-14T03:16:47.072394Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-02-14T03:16:47.072563Z","level":"info","event":"Current task name:transform_to_parquet","logger":"task.stdout"}
+{"timestamp":"2026-02-14T03:16:47.072639Z","level":"info","event":"Dag name:crypto_pipeline_dag","logger":"task.stdout"}
+{"timestamp":"2026-02-14T03:16:47.084351Z","level":"info","event":"Capa Silver actualizada en /opt/airflow/data/silver/crypto_prices.parquet. Se procesaron 3 monedas.","logger":"task.stdout"}
+{"timestamp":"2026-02-14T03:16:47.084350Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":230}
+{"timestamp":"2026-02-14T03:16:47.097985Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2026-02-14T03:16:47.098118Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2026-02-14T03:16:47.098321Z","level":"info","event":"Task operator:<Task(PythonOperator): transform_to_parquet>","logger":"task.stdout"}

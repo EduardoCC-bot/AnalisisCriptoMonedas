@@ -1,0 +1,13 @@
+{"timestamp":"2026-02-12T00:21:01.784950Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-02-12T00:21:01.785498Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/crypto_dag.py","logger":"airflow.models.dagbag.BundleDagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-02-12T00:21:01.806820Z","level":"warning","event":"The `airflow.operators.python.PythonOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.python.PythonOperator'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/crypto_dag.py","lineno":4,"logger":"py.warnings"}
+{"timestamp":"2026-02-12T00:21:01.823556Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-02-12T00:21:01.823750Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-02-12T00:21:01.823886Z","level":"info","event":"Current task name:generate_gold_analytics","logger":"task.stdout"}
+{"timestamp":"2026-02-12T00:21:01.823971Z","level":"info","event":"Dag name:crypto_pipeline_dag","logger":"task.stdout"}
+{"timestamp":"2026-02-12T00:21:01.844295Z","level":"info","event":"Columnas detectadas en Silver: ['usd', 'usd_market_cap', 'coin_id', 'extracted_at']","logger":"task.stdout"}
+{"timestamp":"2026-02-12T00:21:01.929664Z","level":"info","event":"¡Capa Gold generada e insertada en PostgreSQL exitosamente!","logger":"task.stdout"}
+{"timestamp":"2026-02-12T00:21:01.930238Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":230}
+{"timestamp":"2026-02-12T00:21:01.944420Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2026-02-12T00:21:01.944575Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2026-02-12T00:21:01.944746Z","level":"info","event":"Task operator:<Task(PythonOperator): generate_gold_analytics>","logger":"task.stdout"}
